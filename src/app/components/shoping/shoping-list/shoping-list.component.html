@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row">
+    <div class="main" *ngFor="let item of shoppingList">
+      <h2>{{item.title}}</h2>
+      <img [src]="item.url" alt="">
+      <a [href]="item.thumbnailUrl">{{item.thumbnailUrl}}</a>
+      <p>
+        {{item.albumId}}
+      </p>
+    </div>
+  </div>
+</div>
